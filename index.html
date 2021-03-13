@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -22,8 +23,8 @@
             
                 <div class=" col-md-8">
                     <i class="fas fa-sun"></i>
-                    <span id="temp-numb">
-                      12
+                    <span id="temperature">
+                      
                     </span>
                     <span id="cel-far">
                       °C | °F
@@ -31,28 +32,25 @@
                 <span class="conditions">
                     <ul>
                         <li>
-                            Precipitation: 0%
+                            Humidity: <span id="humidity"> </span>%
                         </li>
                         <li>
-                            Humidity: 4%
-                        </li>
-                        <li>
-                            Wind: 2km/h
+                            Wind: <span id="wind"> </span>km/h
                         </li>
                     </ul>
                   </span>
                 </div>
 
             <div class=" col-md-4">
-            <h1>
-                Munich
+            <h1 id="city">
+                
             </h1>
             <ul class="date-condition">
                 <li>
                     Friday 07:00
                 </li>
-                <li>
-                    Clear
+                <li id="description">
+                    
                 </li>
             </ul>
             </div>
@@ -68,7 +66,7 @@
     </div>
 
     
-
+<script src="src/app.js"></script>
 </body>
 
 </html>
