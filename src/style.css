@@ -1,17 +1,23 @@
-.weather-app {
-  max-width: 600px;
-  margin: 30px auto;
-  padding: 20px;
-  border-bottom: 1px solid #9b9aa1;
-}
-
 h1 {
   color: rgb(32, 33, 36);
   font-family: "Open Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 22px;
   text-align: right;
+}
+
+ul {
+  list-style: none;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border-bottom: 1px solid #9b9aa1;
 }
 
 .date-condition {
@@ -19,7 +25,7 @@ h1 {
   font-family: arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 16px;
   text-align: right;
 }
 
@@ -62,8 +68,4 @@ h1 {
 .fa-sun {
   font-size: 48px;
   color: #ffd80d;
-}
-
-ul {
-  list-style: none;
 }
