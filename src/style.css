@@ -15,6 +15,20 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+small {
+  color: rgb(112, 117, 122);
+  font-family: arial, sans-serif;
+  font-size: 8px;
+}
+
+.form-style {
+  padding: 0 2px;
+}
+
+#search-from {
+  margin-bottom: 20px;
+}
+
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
@@ -69,9 +83,4 @@ li:first-letter {
   margin-top: 6px;
   padding-right: 6px;
   vertical-align: top;
-}
-
-.fa-sun {
-  font-size: 48px;
-  color: #ffd80d;
 }
