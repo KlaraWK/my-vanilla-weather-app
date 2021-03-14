@@ -16,7 +16,7 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-    console.log(response.data);
+    //console.log(response.data);
     let temperatureElement = document.querySelector("#temperature");
     temperatureElement.innerHTML = Math.round(response.data.main.temp);
     let cityElement = document.querySelector("#city");
@@ -32,6 +32,8 @@ function displayTemperature(response) {
     let iconElement = document.querySelector("#icon");
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png` );
     iconElement.setAttribute("alt", response.data.weather[0].description);
+
+    celsiusTemperature = response.data.main.temp;
 }
 
 function search(city) {
@@ -47,10 +49,37 @@ function handleSubmit(event) {
     //console.log(cityInputElement.value);
 }
 
-search("New York");
+function dispalyFahrenheitTemperature(event) {
+    event.preventDefault();
+    let temperatureElement = document.querySelector("#temperature");
+    celsiusLink.classList.remove("active");
+    fahrenheitLink.classList.add("active");
+    let fahrenheitTemperature = (celsiusTemperature * 9 / 5) + 32;
+    temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
 
-//console.log(apiUrl);
+function dispalyCelsiusTemperature(event) {
+    event.preventDefault();
+    let temperatureElement = document.querySelector("#temperature");
+    celsiusLink.classList.add("active");
+    fahrenheitLink.classList.remove("active");
+    temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
 
+
+// (0°C × 9/5) + 32 = 32°F Cel to Far
+
+
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-from");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", dispalyFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", dispalyCelsiusTemperature);
+
+
+search("New York");

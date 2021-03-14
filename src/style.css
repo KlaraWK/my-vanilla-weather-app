@@ -84,3 +84,23 @@ small {
   padding-right: 6px;
   vertical-align: top;
 }
+
+img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+
+#cel-far a {
+  text-decoration: none;
+}
+
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: black;
+}
