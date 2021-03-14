@@ -21,6 +21,20 @@ small {
   font-size: 8px;
 }
 
+body {
+  background: linear-gradient(to right, #d9a7c7, #fffcdc);
+}
+
+.weather-app-wrapper {
+  background-color: white;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#buttonCurrent {
+  margin-left: -25px;
+}
+
 .weather-forecast h3 {
   font-family: arial, sans-serif;
   box-sizing: border-box;
