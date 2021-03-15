@@ -51,18 +51,20 @@ small {
 
 .weather-app {
   padding: 20px;
-  border-bottom: 1px solid #9b9aa1;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.form-style {
+  padding-right: 0px;
 }
 
 .search {
   background: #e06445;
   color: white;
   border: 1px solid #e06445;
+  padding-left: 8px;
 }
 
-.form-style {
-  padding: 0 2px;
-}
 .form-style:active,
 .form-style.focus {
   outline: none !important;
@@ -84,7 +86,7 @@ small {
 }
 
 #buttonCurrent {
-  margin-left: -25px;
+  padding-left: 0px;
 }
 
 .current {
