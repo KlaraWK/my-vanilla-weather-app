@@ -41,7 +41,7 @@ small {
   border: 5px solid;
   border-image-source: linear-gradient(
     45deg,
-    rgb(224, 114, 11),
+    rgb(224, 100, 69),
     rgb(177, 177, 177)
   );
   border-image-slice: 1;
